@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Miapp.Pagina2"
+             Title="Pagina2"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="LightCoral">
+    <VerticalStackLayout Padding="30" Spacing="25">
+        <Label 
+            Text="Esta es la pagina 2, pulsa el boton para volver o seguir"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="18"
+            FontFamily="Comic Sans MS"
+            TextColor="Orange"/>
+        <Label 
+        Text="Aqui abajo dejo una demostracion"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        FontSize="18"
+        FontFamily="Comic Sans MS"
+        TextColor="Purple"/>
+        <Button Text="Seguir" Clicked="GoToPage3_Clicked"
+                HeightRequest="50"
+                WidthRequest="70"
+                BackgroundColor="Red"/>
+        <Image 
+            Source="gato2.png"
+            HeightRequest="180"
+            HorizontalOptions="Center"/>
+        
+        <Button Text="Volver" Clicked="Back_Clicked"
+                HeightRequest="50"
+                WidthRequest="70"
+                Background="Red"/>
+        
+    </VerticalStackLayout>
+</ContentPage>

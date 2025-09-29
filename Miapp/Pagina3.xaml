@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Miapp.Pagina3"
+             Title="Pagina3"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="LightGreen">
+    <VerticalStackLayout
+        Padding="40"
+        Spacing="40">
+        <Label 
+            Text="Esa es la ultima pagina, y con este es el final"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontFamily="Times New Roman"
+            FontSize="20"
+            TextColor="Brown"/>
+        <Image 
+    Source="fin.jpg"
+    HeightRequest="180"
+    HorizontalOptions="Center"/>
+        
+        <Button 
+            Text="Volver"
+            Clicked="Back_Clicked"
+            WidthRequest="70"
+            HeightRequest="50"
+            BackgroundColor="green"
+            />
+    </VerticalStackLayout>
+</ContentPage>

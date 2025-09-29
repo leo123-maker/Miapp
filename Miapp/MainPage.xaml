@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Miapp.MainPage"
+             BackgroundColor="PowderBlue"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="25">
+            <Image
+                Source="hornet.jpg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Esta se supone que es ladescripcion" />
+
+            <Label
+                Text="Primera pagina de mi desplazamiento"
+                Style="{StaticResource Headline}"
+                TextColor="Red"
+                SemanticProperties.HeadingLevel="Level1"
+                FontFamily="Arial"/>
+
+            <Label
+                Text="Aqui vera como se desplazan las paginas como tal"
+                Style="{StaticResource SubHeadline}"
+                TextColor="Blue"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Se supone que esa es la segunda descripcion"
+                FontFamily="Arial"/>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Pasar de pagina" 
+                SemanticProperties.Hint="Avanza a la siguiente"
+                FontSize="15"
+                TextColor="White"
+                BackgroundColor="DarkBlue"
+                HeightRequest="50"
+                WidthRequest="150"
+                 Clicked="GoToPagina2_Clicked"
+                HorizontalOptions="Fill"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
